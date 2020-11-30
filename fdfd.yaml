@@ -1,13 +1,19 @@
 proxies:
-  - {name: 🇭🇰 G16012 香港 | 长沙 ☞ 香港, server: cscu.sixg.cc, port: 16012, type: vmess, uuid: a75f07fe-dccd-3da0-96b3-88d6bd88948e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /video1, ws-headers: {Host: cscu.sixg.cc}}
-  - {name: 🇭🇰 G16014 台湾 | 长沙 ☞ 香港 ☞ 台湾, server: cscu.sixg.cc, port: 16014, type: vmess, uuid: a75f07fe-dccd-3da0-96b3-88d6bd88948e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /video1, ws-headers: {Host: cscu.sixg.cc}}
-  - {name: 🇯🇵 G50000 日本 | 北京 ☞ 日本, server: cscu.sixg.cc, port: 50000, type: vmess, uuid: a75f07fe-dccd-3da0-96b3-88d6bd88948e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /video1, ws-headers: {Host: cscu.sixg.cc}}
-  - {name: 🇸🇬 K36151 江苏→新加坡 入口电信, server: 222.186.174.59, port: 36151, type: vmess, uuid: a75f07fe-dccd-3da0-96b3-88d6bd88948e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /video, ws-headers: {Host: www.baidu.com}}
-  - {name: 🇺🇸 NO.1 美国 双向CN2GIA 2x, server: 222.186.174.59, port: 36557, type: vmess, uuid: a75f07fe-dccd-3da0-96b3-88d6bd88948e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /video, ws-headers: {Host: www.baidu.com}}
-  - {name: 🇭🇰 NO.1 香港 单向CN2GIA, server: 222.186.174.59, port: 38769, type: vmess, uuid: a75f07fe-dccd-3da0-96b3-88d6bd88948e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /video, ws-headers: {Host: www.baidu.com}}
-  - {name: 🇭🇰 NO.1 香港 双向CN2GIA 2x, server: 222.186.174.59, port: 23769, type: vmess, uuid: a75f07fe-dccd-3da0-96b3-88d6bd88948e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /video, ws-headers: {Host: www.baidu.com}}
-  - {name: 🇯🇵 NO.2 东亚日本 AGA, server: 222.186.174.59, port: 7591, type: vmess, uuid: a75f07fe-dccd-3da0-96b3-88d6bd88948e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /video, ws-headers: {Host: www.baidu.com}}
-  - {name: 🇨🇳 NO.2 中国台湾 粤台, server: gzcmt.sixg.cc, port: 60000, type: vmess, uuid: a75f07fe-dccd-3da0-96b3-88d6bd88948e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /video1, ws-headers: {Host: gzcmt.sixg.cc}}
-  - {name: 🇭🇰 NO.2 中国香港 AGA, server: 222.186.174.59, port: 3687, type: vmess, uuid: a75f07fe-dccd-3da0-96b3-88d6bd88948e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /video, ws-headers: {Host: www.baidu.com}}
-  - {name: 🇭🇰 NO.2 中国香港 粤港, server: gzcmt.sixg.cc, port: 35736, type: vmess, uuid: a75f07fe-dccd-3da0-96b3-88d6bd88948e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /video1, ws-headers: {Host: gzcmt.sixg.cc}}
-  - {name: 🇭🇰 GCD-HK, server: gzd1214.ml, port: 443, type: trojan, password: 3c7ca052-4af9-4ced-bfc7-6c43f4d7c34c, sni: gzd1214.ml, skip-cert-verify: false}
+  - name: qqsq01
+    type: vmess
+    server: qqsq01.herokuapp.com
+    port: "443"
+    uuid: da99842b-849f-4d63-bdae-da9b96519e35
+    alterId: "64"
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: ""
+  - name: trojan
+    type: trojan
+    server: www.qqsq01.xyz
+    port: 443
+    password: 123456
+    alpn:
+      - h2
+      - http/1.1
