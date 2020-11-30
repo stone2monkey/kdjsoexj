@@ -1,19 +1,30 @@
-proxies:
-  - name: qqsq01
-    type: vmess
-    server: qqsq01.herokuapp.com
-    port: "443"
-    uuid: da99842b-849f-4d63-bdae-da9b96519e35
-    alterId: "64"
-    cipher: auto
-    tls: true
-    network: ws
-    ws-path: ""
-  - name: trojan
-    type: trojan
-    server: www.qqsq01.xyz
+  - {name: fq.wangsiyong.icu:443, server: fq.wangsiyong.icu, port: 443, type: vmess, uuid: 14c8265e-a3da-4cf3-ba76-c8c3c6fa2d5e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cd2446e8/, ws-headers: {Host: fq.wangsiyong.icu}, udp: true}
+  - name: api.imwl.ga:443
+    server: api.imwl.ga
     port: 443
-    password: 123456
-    alpn:
-      - h2
-      - http/1.1
+    type: trojan
+    password: w4Hs2!.+1
+    sni: api.imwl.ga
+    skip-cert-verify: true
+    udp: true
+    tcp: 
+      no_delay: "true"
+      keep_alive: "true"
+      fast_open: "true"
+      reuse_port: "true"
+      fast_open_qlen: "40"
+
+  - name: tj.imwl.ml:443
+    server: tj.imwl.ml 
+    port: 443
+    type: trojan
+    password: w4Hs2!.+1
+    sni: tj.imwl.ml
+    skip-cert-verify: true
+    udp: true
+    tcp: 
+      no_delay: "true"
+      keep_alive: "true"
+      fast_open: "true"
+      reuse_port: "true"
+      fast_open_qlen: "40"
