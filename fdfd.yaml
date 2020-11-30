@@ -1,3 +1,5 @@
+proxies:
+
   - {name: fq.wangsiyong.icu:443, server: fq.wangsiyong.icu, port: 443, type: vmess, uuid: 14c8265e-a3da-4cf3-ba76-c8c3c6fa2d5e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cd2446e8/, ws-headers: {Host: fq.wangsiyong.icu}, udp: true}
   - name: api.imwl.ga:443
     server: api.imwl.ga
